@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>A-RESORT</title>
+        <link rel="stylesheet" type="text/css" href="base.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+    </head>
+    <body>
+        <header style="position: relative;">
+            <!-- ここに追記 -->
+            <div><div id="top"></div>
+                <div id=frame><img src="./images/top.jpeg"alt="画像1"class="top_img"></div>
+                <div id="headertext" style="position: absolute; top: 0%; left: 0%; width: 100%; text-align: center;">
+
+                    
+                        <nav class="headerflex"><!-- 横並びにする -->
+                            
+                            <img src="./images/logo.png"alt="画像1"class="header_logo">
+                                <div id="margin">
+                                    <a href="#1"class="link-button">施設</a>
+                                    <a href="#2"class="link-button">体験</a>
+                                    <a href="#3"class="link-button">特集</a>
+                                    <a href="#4"class="link-button">お知らせ</a>
+                                    <a href="#5"class="link-button">お問い合わせ</a>
+                                </div>
+                            <input type="button" id="button" value="空室検索">
+
+                            <!-- モーダル本体 -->
+                            <div class="modal-container">
+                                <div class="modal-body">
+                                    <!-- モーダル内のコンテンツ -->
+                                    <div class="modal-content">
+                                        <div id="modal_ui-width">
+                                            <p id="modal-textbold">空室検索</p>
+                                            <p id="modal-text">目的地・ホテル名など</p>
+                                            <input type="text"class="value">
+                                            <p id="modal-text">チェックイン</p>
+                                            <input type="date" class="check"style="font-size: 1.6vw;"/>
+                                            <p id="modal-text">チェックアウト</p>
+                                            <input type="date" class="check"style="font-size: 1.6vw;"/>
+                                            <p id="modal-text">宿泊人数</p>
+                                            <input type="text"class="value">
+                                            <form action="https://www.google.co.jp/search" method="get">
+                                                <input type="submit" id="searchbutton" value="調べる">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </nav>
+
+                        <a href="#top" class="top-button">TOPに戻る</a>
+
+                        <p class="top-img-text">
+                            <br><br>
+                            Take memories,
+                        <br>leave footprints.</p>
+                </div>
+            </div>
+            
+            
+            
+        </header>
+
+        <main>
+
+            <br><br><br>
+            <!-- リゾート施設 -->
+            <div class="mainflex"><div id="1"></div>
+                <div id="margin">リゾート施設</div>
+            </div>
+            
+
+            
+        
+            <br>
+
+            <div class="flex"style="justify-content: center;">
+                <!--親用flex-->
+                <div>
+                    <h1 style="text-align: center;">《国内》</h1>
+                    <br>
+                    <div class="flexitem"id="margin_right">
+                        <div>
+                            <div class="image-group">
+                                <div id="pic1"></div>
+                                <p class="maintext">北海道</p>
+                                <p>洞爺湖リゾート</p>
+                                <br>
+                                <div id="pic3"></div>
+                                <p class="maintext">神奈川県</p>
+                                <p>湘南リゾート</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image-group">
+                                <div id="pic2"></div>
+                                <p class="maintext">千葉</p>
+                                <p>舞浜リゾート</p>
+                                <br>
+                                <div id="pic4"></div>
+                                <p class="maintext">静岡</p>
+                                <p>白浜リゾート</p>
+                                <br>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div>
+                    <div class="line"><!-- 青線 --></div>
+                </div>
+                <div>
+                    <h1 style="text-align: center;">《国外》</h1>
+                    <br>
+                    <div class="flexitem"id="margin_left">
+                        <div>
+                            <div class="image-group">
+                                <div id="pic5"></div>
+                                <p class="maintext">インドネシア</p>
+                                <p>バリ島リゾート</p>
+                                <br>
+                                <div id="pic7"></div>
+                                <p class="maintext">タイ</p>
+                                <p>プーケットリゾート</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="image-group">
+                                <div id="pic6"></div>
+                                <p class="maintext">アメリカ</p>
+                                <p>ハワイリゾート</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------>
+            </div>
+                
+                <!--<input type="button" id="button_ichiran" value="一覧へ　　＞" >-->
+            <!---------------------------------------------------->
+
+            <!-- おすすめの体験 -->
+            <div class="wrapper1x1"><!-- ページの80％の大きさで表示 --><div id="2"></div>
+                <!-- グリッド制作箇所 -->
+                <h1 id="margin">おすすめの体験</h1>
+                <br>
+
+                <div id="container"> <!-- コンテナ -->
+                    <div id="grid1"><div class="gridtext">RESORT WEDDING</div></div> <!-- アイテム -->
+                    <div id="grid2"><div class="gridtext">ACTIVITIES</div></div> <!-- アイテム -->
+                    <div id="grid3"><div class="gridtext">RELAXATION</div></div> <!-- アイテム -->
+                    <div id="grid4"><div class="gridtext">UP COMING EVENT</div></div> <!-- アイテム -->
+                    <div id="grid5"><div class="gridtext">10.15 GRAND OPEN</div></div> <!-- アイテム -->
+                </div>
+
+                <br>
+                <input type="button" id="button_ichiran" value="一覧へ　　＞" >
+            </div>
+            <!---------------------------------------------------->
+
+
+            <!-- 早割キャンペーン -->
+            <div class="wrapper1x1"><div id="3"></div>
+                
+                <h1 id="margin">旅の提案</h1>
+                <img src="./images/hayawari.png"alt="画像1"class="hayawari box">
+                <br>
+                <input type="button" id="button_ichiran" value="一覧へ　　＞" >
+            </div>
+            <!---------------------------------------------------->
+            
+            <!-- トピックス -->
+            <div class="flex"><div id="4"></div>
+                <h1 id="margin">お知らせ</h1>
+            </div>
+            <br>
+
+            <div id="margin">
+                <div id="wrapper_sel"class="flex">
+                    <p><img src="./images/logo.png"alt="画像1"class="main_logo"></p>
+                    <div style="margin-left: 50px; margin-right: 50px; margin-top : auto; margin-bottom : auto;"><!-- テキストのみ左に50px -->
+                        <p class="text">
+                            <p class="textbold">トピックス</p>
+                            <p class="text2"style="margin-bottom: 20px">2022年03月25日
+                            <br>【石垣リゾート】29歳以下限定 開業前特別プラン 予約受付開始！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="margin">
+                <div id="wrapper_sel"class="flex">
+                    <p><img src="./images/logo.png"alt="画像1"class="main_logo"></p>
+                    <div style="margin-left: 50px; margin-right: 50px; margin-top : auto; margin-bottom : auto;"><!-- テキストのみ左に50px -->
+                        <p class="text">
+                            <p class="textbold">トピックス</p>
+                            <p class="text2"style="margin-bottom: 20px">2022年03月19日
+                            <br>【湘南リゾート】開放感のあるプールサイドでビールを楽しむ「ビアフェス」開催
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="margin">
+                <div id="wrapper_sel"class="flex">
+                    <div><img src="./images/logo.png"alt="画像1"class="main_logo"></div>
+                    <div style="margin-left: 50px; margin-right: 50px; margin-top : auto; margin-bottom : auto;"><!-- テキストのみ左に50px -->
+                        <p class="text">
+                            <p class="textbold">トピックス</p>
+                            <p class="text2"style="margin-bottom: 20px">2022年03月07日
+                            <br>【屋久島リゾート】春の訪れを祝う「花咲かまつり」開催ｌ期間 2022年3月3日~2022年3月21日
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <input type="button" id="button_ichiran" value="一覧へ　　＞" >
+            <br>
+            <!---------------------------------------------------->
+
+        </main>
+        <br><br><br><br>
+        <footer>
+
+            <div id="5"></div>
+                
+            <div class="footerflex">
+                <f1><!-- ロゴとテキスト-->
+                    <img src="./images/logo.png"alt="画像1"class="footer_logo">
+
+                    <table class="footertext">
+                        <tr>
+                            <th>〒150-0001</th>
+                        </tr>  
+                        <tr>
+                            <th>東京都渋谷区神宮前2丁目4-11</th>
+                        </tr>
+                        <tr>
+                            <th class="underline">Daiwa神宮前ビル3階</th>
+                        </tr>
+                        <tr>
+                            <th class="underline"><br>BLOG</th>
+                        </tr>
+                        <tr>
+                            <th class="underline"><br>CONTACT</th>
+                        </tr>
+                    </table>
+                </f1>
+                <img src="./images/map.png"alt="マップ画像"class="map">
+            </div>  
+        </footer>
+                
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
